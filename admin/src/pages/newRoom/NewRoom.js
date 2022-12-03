@@ -19,6 +19,8 @@ const NewRoom = ({ inputs, title }) => {
         const roomNumbers = rooms.split(',').map((room) => ({ number: room }));
         try {
             await axios.post(`/rooms/${hotelId}`, { ...info, roomNumbers });
+
+            alert("Tạo mới Room Thành công!")
         } catch (err) {
             console.log(err);
         }
