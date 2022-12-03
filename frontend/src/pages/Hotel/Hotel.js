@@ -106,15 +106,15 @@ const Hotel = () => {
                         </div>
                     )}
                     <div className="hotel-wrapper">
-                        <button className="hotel-book">Reserve or Book Now!</button>
+                        <button className="hotel-book">Đặt trước hoặc Đặt ngay!</button>
                         <h1 className="hotel-title">{data.name}</h1>
                         <div className="hotel-location">
                             <FontAwesomeIcon icon={faLocationDot} />
                             <span>{data.address}</span>
                         </div>
-                        <span className="hotel-distance">Excellent location – {data.distance}m from center</span>
+                        <span className="hotel-distance">Vị trí tuyệt vời – Cách trung tâm {data.distance}km.</span>
                         <div className="hotel-price">
-                            Book a stay over {data.cheapestPrice} VNĐ at this property and get a free airport taxi
+                            Đặt phòng với {data.cheapestPrice} VNĐ tại khách sạn này và nhận dịch vụ taxi ra sân bay miễn phí.
                         </div>
                         <div className="hotel-Images">
                             {data.photos?.map((photo, index) => (
@@ -125,19 +125,18 @@ const Hotel = () => {
                         </div>
                         <div className="hotel-detail">
                             <div className="hotel-detail__text">
-                                <h1 className="hotel-detail__title">Stay in the heart of City</h1>
+                                <h1 className="hotel-detail__title">Ở ngay trung tâm Thành phố.</h1>
                                 <p className="hotel-detail__desc">{data.desc}</p>
                             </div>
                             <div className="hotel-detail__price">
-                                <h1>Perfect for a {days}-night stay!</h1>
+                                <h1>Hoàn hảo cho kỳ nghỉ {days} đêm!</h1>
                                 <span>
-                                    Located in the real heart of Krakow, this property has an excellent location score
-                                    of 9.8!
+                                    Nằm ngay trung tâm {data.city}. Chỗ nghỉ này có một vị trí xuất sắc.
                                 </span>
                                 <h2>
-                                    <b>{days * data.cheapestPrice * options.room} VNĐ</b> ({days} nights)
+                                    <b>{days * data.cheapestPrice * options.room} VNĐ</b> ({days} đêm)
                                 </h2>
-                                <button onClick={handleClick}>Reserve or Book Now!</button>
+                                <button onClick={handleClick}>Đặt trước hoặc Đặt Ngay!</button>
                             </div>
                         </div>
                     </div>
