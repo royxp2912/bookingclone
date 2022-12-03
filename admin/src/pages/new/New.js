@@ -28,6 +28,8 @@ const New = ({ inputs, title }) => {
                 img: url,
             };
             await axios.post('/auth/register', newUser);
+
+            alert('Thêm User thành công');
         } catch (err) {
             console.log(err);
         }

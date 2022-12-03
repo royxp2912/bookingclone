@@ -20,7 +20,7 @@ const NewRoom = ({ inputs, title }) => {
         try {
             await axios.post(`/rooms/${hotelId}`, { ...info, roomNumbers });
 
-            alert("Tạo mới Room Thành công!")
+            alert('Tạo mới Room Thành công!');
         } catch (err) {
             console.log(err);
         }
@@ -58,7 +58,9 @@ const NewRoom = ({ inputs, title }) => {
                                 />
                             </div>
                             <div className="formInput">
-                                <label>Choose Hotel</label>
+                                <label>
+                                    Choose Hotel(<b>Chưa có giá trị Hotel mặc địn</b>)
+                                </label>
                                 <select id="hotelId" onChange={(e) => setHotelId(e.target.value)}>
                                     {loading
                                         ? 'loading'
