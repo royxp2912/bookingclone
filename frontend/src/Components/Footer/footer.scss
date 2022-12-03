@@ -1,0 +1,22 @@
+.footer{
+    width: 100%;
+    max-width: 1140px;
+    font-size: 1.3rem;
+}
+.footer-lists{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.footer-list{
+    color: #0071c2;
+    list-style: none;
+}
+.footer-item{
+    margin-bottom: 10px;
+
+    &:hover{
+        cursor: pointer;
+        color: #bc5b01;
+    }
+}

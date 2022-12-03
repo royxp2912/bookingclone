@@ -1,0 +1,56 @@
+.navbar{
+    height: 60px;
+    background-color: #003279;
+    display: flex;
+    justify-content: center;
+}
+.navContainer{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    width: 100%;
+    max-width: 526px;
+    font-weight: 700;
+    font-size: 2.6rem;
+    color: #fff;
+    padding: 16px 8px 16px 0 ;
+}
+.nav-item{
+
+}
+.navbutton{
+    margin-left: 10px;
+    background-color: #F2f2f2;
+    color: #006bc3;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+
+
+    &:hover{
+        opacity: 0.8;
+    }
+}
+.user-box{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    >div{
+        color: #fff;
+    }
+    >button{
+        padding: 8px;
+        background-color: #fff;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+}

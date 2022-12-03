@@ -1,0 +1,26 @@
+.property-List{
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.property-item{
+    flex: 1;
+    cursor: pointer;
+    background-color: #fff;
+}
+.property-img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    height: 150px;
+}
+.property-title>h1{
+    font-size: 1.8rem;
+}
+.property-title>h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #6b6b6b;
+}
