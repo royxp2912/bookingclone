@@ -27,7 +27,7 @@ const Login = () => {
                 dispatch({ type: 'LOGIN_SUCCESS', payload: res.data });
                 navigate('/');
             } else {
-                dispatch({ type: 'LOGIN_FAILURE', payload: { message: 'you are not allowed' } });
+                dispatch({ type: 'LOGIN_FAILURE', payload: { message: 'Bạn không được phép' } });
             }
         } catch (err) {
             dispatch({ type: 'LOGIN_FAILURE', payload: err.response.data });
@@ -39,14 +39,14 @@ const Login = () => {
             <div className="login-Container">
                 <input
                     type="text"
-                    placeholder="username"
+                    placeholder="Tài khoản"
                     id="username"
                     onChange={handleChange}
                     className="login-Input"
                 />
                 <input
                     type="password"
-                    placeholder="password"
+                    placeholder="Mật khẩu"
                     id="password"
                     onChange={handleChange}
                     className="login-Input"

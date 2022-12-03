@@ -41,6 +41,8 @@ const NewHotel = ({ inputs, title }) => {
             };
 
             await axios.post('', newhotel);
+
+            alert('Thêm Hotel thành công');
         } catch (err) {
             console.log(err);
         }
